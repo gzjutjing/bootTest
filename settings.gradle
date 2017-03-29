@@ -1,0 +1,8 @@
+rootProject.name = 'bootTest'
+include 'config'
+include 'discovery'
+include 'ui'
+include 'person'
+include 'some'
+include 'monitor'
+

@@ -1,0 +1,15 @@
+
+server:
+  port:8888
+
+spring:
+  profiles:
+    active:native
+  cloud:
+    config:
+      server:
+        #native:
+        #  searchLocations:classpath:/config
+        #git:
+        #  uri:http://github.com/jing
+        #  serachPaths:test-config #如果配置文件放置在Git存储库的根目录下，则无需使用searchPaths参数
