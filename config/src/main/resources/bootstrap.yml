@@ -1,8 +1,6 @@
 spring:
   application:
-    name:config #1
-  profiles:
-    actvice:native  #2
+    name: config #1
 
 ##eureka:
 #  instance:

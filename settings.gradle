@@ -5,4 +5,5 @@ include 'ui'
 include 'person'
 include 'some'
 include 'monitor'
+include 'configClient'
 

@@ -1,0 +1,8 @@
+
+spring:
+  port: 8889
+spring:
+  cloud:
+    config:
+      name: configClient
+      uri: http://localhost:8888 #config server服务器地址

@@ -1,16 +1,16 @@
 spring:
   application:
-    name:person
+    name: person
   cloud:
     config:
-      enabled:true
+      enabled: true
       discovery:
-        enable:true
-        service-id:CONFIG
+        enable: true
+        service-id: CONFIG
 
 eureka:
   instance:
-    non-secure-port:${server.port:8082}
+    non-secure-port: ${server.port:8082}
   client:
     service-url:
-      defaultZone:http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/
