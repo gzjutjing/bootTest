@@ -1,4 +1,4 @@
 
-config.name: configClient
+name: configClient
 
-client.date: 2017/4
+date: 2017/4
