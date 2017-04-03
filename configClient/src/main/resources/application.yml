@@ -1,8 +1,11 @@
 
-spring:
+server:
   port: 8889
+
 spring:
+  application:
+    name: configClient
   cloud:
     config:
-      name: configClient
+      #label: master
       uri: http://localhost:8888 #config server服务器地址
