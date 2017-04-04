@@ -1,0 +1,18 @@
+server:
+  port: 7998 #1
+
+eureka:
+  instance:
+    hostname: eureka1  #2
+  client:
+    register-with-eureka: false  #3
+    fetch-registry: false
+    server-uri:
+      defaultZone: http://eureka2:7999/eureka
+
+security:
+  basic:
+    enabled: false
+  user:
+    name: name
+    password: password

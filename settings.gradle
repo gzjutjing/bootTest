@@ -1,9 +1,12 @@
 rootProject.name = 'bootTest'
 include 'config'
-include 'discovery'
 include 'ui'
 include 'person'
 include 'some'
 include 'monitor'
 include 'configClient'
+include 'eureka1'
+include 'eureka2'
+include 'configEureka'
+include 'configEurekaClient'
 
