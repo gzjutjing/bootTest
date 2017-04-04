@@ -1,0 +1,15 @@
+
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      discovery:
+        enable: true
+      server:
+        git:
+          uri: https://github.com/gzjutjing/bootTest
+          #searchPaths: config/src/main/resources/config #如果配置文件放置在Git存储库的根目录下，则无需使用searchPaths参数
+          searchPaths: "config/src/main/resources/configEureka"
+          #basedir: d:/cloudConfig #远程git文件会被clone到本地文件系统中，默认存放以config-repo-为前缀的系统临时目录中，有些系统会定期清理，这会导致不可预知的问题出现，这个配置项可以改变目录存储

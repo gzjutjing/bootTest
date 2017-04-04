@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: configEureka #1
+
+eureka:
+#  instance:
+#    non-secure-port:${server.port:8888} #3
+#    metadata-map:
+#      instanceId:${spring.application.name}:${random.value} #4
+  client:
+    service-url:
+      #通过地址http://localhost:7998/可以访问，为什么要加eureka/？
+      defaultZone: http://${eureka.host:localhost}:${eureka.port:7998}/eureka/,http://eureka2:7999/eureka/
+  instance:
+    preferIpAddress: true
