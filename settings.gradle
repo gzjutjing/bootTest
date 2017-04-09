@@ -9,4 +9,5 @@ include 'eureka1'
 include 'eureka2'
 include 'configEureka'
 include 'configEurekaClient'
+include 'ribbon'
 
