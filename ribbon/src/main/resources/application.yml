@@ -1,8 +1,10 @@
 spring:
   application:
     name: say-hello
+
 server:
   port: 8082
+
 say-hello:
   ribbon:
     eureka:

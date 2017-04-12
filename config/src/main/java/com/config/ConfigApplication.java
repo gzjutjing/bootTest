@@ -6,6 +6,7 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
+ * ribbon的另外一个服务端，用于测试ribbon
  * Created by admin on 2017/3/23.
  */
 @SpringBootApplication

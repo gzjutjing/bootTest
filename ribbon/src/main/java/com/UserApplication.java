@@ -2,6 +2,7 @@ package com;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -30,10 +31,12 @@ public class UserApplication {
     public RestTemplate restTemplate() {
         return new RestTemplate();
     }
+    @Autowired
+    private RestTemplate restTemplate;
 
     @RequestMapping("/say")
     public String say(@RequestParam(name = "name", defaultValue = "Json") String name) {
-        String greet = restTemplate().getForObject("http://say-hello/greeting", String.class);
+        String greet = restTemplate.getForObject("http://say-hello/greeting", String.class);
         return String.format("%s %s", greet, name);
     }
 
