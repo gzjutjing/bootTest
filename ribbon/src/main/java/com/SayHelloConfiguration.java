@@ -14,13 +14,9 @@ import org.springframework.context.annotation.Bean;
 public class SayHelloConfiguration {
     @Autowired
     IClientConfig ribbonClientConfig;
-
-    @Bean
-    public IPing iPing(IClientConfig config){
-        return new PingUrl();
-    }
-    @Bean
-    public IRule rule(IClientConfig config){
-        return new AvailabilityFilteringRule();
-    }
+//
+//    @Bean
+//    public IPing iPing(IClientConfig config){
+//        return new PingUrl();
+//    }
 }

@@ -11,3 +11,8 @@ say-hello:
       enable: false
     listOfServers: localhost:8888,localhost:8082
     ServerListRefreshInterval: 1500
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule
+
+tt:
+  ribbon:
+    listOfServers: http://localhost:8888,http://localhost:8082
