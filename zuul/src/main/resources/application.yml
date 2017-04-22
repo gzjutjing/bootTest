@@ -1,0 +1,13 @@
+
+server:
+  port: 9000
+
+ribbon:
+  eureka:
+    enable: false
+
+zuul:
+  routes:
+    books:
+      path: /books/**
+      url: http://localhost:8888/books

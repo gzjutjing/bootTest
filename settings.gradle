@@ -12,4 +12,5 @@ include 'configEurekaClient'
 include 'ribbon'
 include 'ribbonEureka'
 include 'ribbonEurekaClient2'
+include 'zuul'
 
